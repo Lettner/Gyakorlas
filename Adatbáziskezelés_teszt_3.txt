@@ -1,0 +1,37 @@
+Adatbázis-kezelés
+
+1.1 Melyik aggregátfüggvény segítségével lehet átlagot számolni?
+A, Avg()
+
+1.2 Melyik záradék nem használható SQL utasításokban az alábbiak közül?
+A, INSIDE
+
+1.3 A felsorolt záradékok közül melyik segítségével rendezhetjük a rekordokat magasság szerint csökkenő sorrendbe?
+C, ORDER BY magasság DESC, testsúly DESC
+
+1.4 A felsorolt záradékok közül melyik szűrheti úgy a rekordokat, hogy a darab mezőértékei között ne szrepeljen a 12?
+C, WHERE darab <> 12    # nem egyenlő <> ez a jel
+
+1.5 Mi történhet a következő SQL utasítás futtatása után? Feltételezheti, hogy a tábla létezik, nem áll kapcsolatban másik táblákkal és legalább két rekordot tartalmaz.
+C A tábla összes rekorja törlődni fog.
+
+1.6 Melyik SQL záradékot kell használni egy lekérdezésben a táblák összekapcsolására?
+C, JOIN
+
+1.7 Mi lesz az eredménye a következő lekérdezésnek?
+SELECT COUNT(DISTINCT szervezo) FROM sportesemenyek;
+F, 9
+
+1.8 Melyik lekérdezés eredménye lesz egyedül a DRAGON Európa-bajnokság 2018?
+A, SELECT esemeny FROM sportesemenyek
+   WHERE szervezo LIKE '%Vitrolsás%' AND DAY(datum) = 23
+
+1.9 Hány rekorddal (adatsorral) tér vissza a következő lekérdezés?
+SELECT * FROM sportesemyenyek GROUP BY HAVING COUNT(datum) > 2;
+A,1
+
+1.10 Milyen eredménnyel tér vissza a következő lekérdezés?
+SELECT MAX(datum) FROM sportesemenyek WHERE helyszin LIKE 'füred';
+A, Hibás az utasítás
+
+
