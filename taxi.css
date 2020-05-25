@@ -1,0 +1,51 @@
+
+#content{
+	background-color:goldenrod;
+	width:960px;
+	position: absolute;          
+	top: 50%;
+	left: 50%;
+	margin-top: -450px;
+	margin-left: -530px;
+	border-left: 10px solid yellow;          
+	border-right: 10px solid yellow;
+	
+	
+}
+h1{
+	text-align: center;
+	font-variant: small-caps;
+}
+.right_1 img{             /* új osztály kijelölő magasság beállítása a képnek külön  */
+	height:300px;
+}
+
+.right_1 {                /* új osztály kijelölő magasság és lebegtetés jobbra, így pontosan a kép mellé rakja a szövegete ahogy a mintában */
+	float:right;
+	height:300px;
+	
+}
+
+.bio_1 {             /* bio_1 új osztályazonosító balra lebegtetése, szélesség beállítása, keret és háttérszín beállítása*/
+	
+	float:left;
+	width: 400px;
+	border: 3px solid yellow;
+	background-color: lightgray;
+	margin: 5px;
+	
+}
+p{
+	text-align: justify;                    /* bekezdések sorkizárása*/
+	
+}
+.p_1{   /* uj elemazonosító amivel töröljük a bal oldali lebegtetést a megjelölt elemen */
+	
+	clear:left;
+}
+a:visited{
+	color:yellow;
+}
+a:hover{
+	color:red;
+}

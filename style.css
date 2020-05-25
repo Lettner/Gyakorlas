@@ -1,47 +1,42 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-position-x: 150px;
-	background-image: url("baseball-background.jpg");     /* háttérkép beszúrása*/
-	background-repeat: no-repeat;                 /* háttérkép nem ismétlődik*/
-	background-size: 960px;
+*{
+    padding:0;margin:0
 }
 
-#content {
-    padding: 20px;
-    background-color: rgba(255,255,255,0.85);
-	width: 800px;
-	margin-top: 150px;
-	position: absolute;          /* a teljes #content rész vízszintesen középre helyezése margin top-left lehet belőni pontosan, körülményes kicsit*/
-	top: 50%;
-	left: 50%;
-	margin-top: -300px;
-	margin-left: -230px;
-	border-left: 2px solid red;          /* 2 pixel szélességű piros vonal baloldalt a divben*/
-	border-right: 2px solid red;         /* 2 pixel szélességű piros vonal jobboldalt a divben*/
-}
-.frame {            /* osztályazonosító */
-    padding: 20px;
-    margin: 10px;
-	float: right;
-	width: 150px;
-	border-left: 2px solid black;        /* 2 pixel szélességű fekete vonal baloldalt a divben a szöveg és kép mellett*/
-}
-.frame img{          /* osztályazonosító külön a képre*/
-    width: 150px;
-	float: right;
-}
-.imgcaption {           /*egy szövegrészre div osztáylazonosító*/
-	text-align:center;   
-}
-span {                  /*span formázása*/
-	color:red;
-	font-weight: bold;     /*félkövér*/
-}
-a:link {      /* a href link formázása*/
-	text-decoration: none;           /* a href leszedi az aláhúzást*/
-}
-a:hover {             /* a href hover amikor a link fölé megyünk. ezt formázza*/
-	color:red;
+body{
+    background-color:#fff8dc;height:100vh;margin-top:0
 }
 
+body>div{
+    height:100vh;padding:0 50px
+}
+
+h1{
+    font-size:50px;font-weight:bolder;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.right{
+    margin:0 0 15px 15px;border:3px solid #ff0;
+	
+}
+
+body>div>*,body>div>div>*{
+    margin-bottom:15px
+}
+
+.bio{
+    padding:25px;margin:15px 15px 0 0
+}
+
+.left{
+    float:left;margin-right:10px;
+}
+
+ul{
+    padding:15px
+}
+
+hr{
+    border-color:#ff0;margin-bottom:30px
+}
