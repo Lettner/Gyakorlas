@@ -1,42 +1,65 @@
-*{
-    padding:0;margin:0
+#content{
+	outline: 10px solid forestgreen;
+	width:888px;
+	background-color:#F4FBEA;
+	position: absolute;          /* a teljes #content rész vízszintesen középre helyezése margin top-left lehet belőni pontosan, körülményes kicsit*/
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -230px;
 }
-
-body{
-    background-color:#fff8dc;height:100vh;margin-top:0
+#imageright{               /* kép méretezése paintbe hogy a divet megfelelően lehessen beállítani a szélesség és magasság alapján*/
+	background-color:#F3EBB4;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 2px solid forestgreen;
+	float: right;
+	width: 262px;
+	height: 370px;
 }
-
-body>div{
-    height:100vh;padding:0 50px
+#imageleft{
+	background-color:#F3EBB4;
+	margin-left: 20px;
+	margin-right: 40px;
+	margin-bottom: 80px;
+	border: 2px solid forestgreen;
+	float:left;
+	width: 200px;
+	height:220px;
+}
+.kepszoveg{
+	
+	font-weight:bold;
+	font-style: italic;
+	text-align: center;
 }
 
 h1{
-    font-size:50px;font-weight:bolder;
-	text-align: center;
-	font-variant: small-caps;
+	margin-left:20px;
+	text-transform:uppercase;
+	color: forestgreen;
 }
 
-.right{
-    margin:0 0 15px 15px;border:3px solid #ff0;
+h2{
+	text-transform:uppercase;
+	color: forestgreen;
+	margin-left: 20px;
+}
+
+p{
+	text-align:justify;
+	margin: 20px;
 	
 }
 
-body>div>*,body>div>div>*{
-    margin-bottom:15px
+a:link{
+	text-decoration:none;
+	text-transform:lowercase;
+	
 }
-
-.bio{
-    padding:25px;margin:15px 15px 0 0
+a:visited{
+	color:blue;
 }
-
-.left{
-    float:left;margin-right:10px;
-}
-
-ul{
-    padding:15px
-}
-
-hr{
-    border-color:#ff0;margin-bottom:30px
+a:hover{
+	color:red;
 }
